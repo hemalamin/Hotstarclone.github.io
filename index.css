@@ -1,0 +1,376 @@
+/* Css Reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #0c111b;
+    position: relative;
+    font-family: Roboto;
+}   
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: #0c111b;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* LeftNav */
+/* .ham{
+    display: inline-block;
+    margin: 10px 0px 0px 10px;
+}
+.line{
+    margin: 3px;
+    padding: 1px;
+    width: 30px;
+    background-color: lightgrey;
+    height: 2px;
+} */
+
+.logo img{
+    /* width: 70px; */
+    margin-left: 30px;
+    height: 70px;
+}
+.left-nav ul a{
+    color: white;
+    text-decoration: none;
+    margin: 40px 0px 0px 0px;
+    padding: 10px;
+}
+
+.left-nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* rightNav */
+.right-nav{
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+
+.nav-sub{
+    background-color: #1f80e0;
+    width:auto; 
+    height: 30px;
+    padding: 0px 20px;
+    color: #fff;
+    border-radius: 6px;
+    border:none;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.sub-text{
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.nav-login{
+  color: #fff;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-search{
+    background:transparent;
+    border: none; 
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.nav-search:focus{
+    width: 400px;
+    border-color: #1f80e0;
+    transition: .5s;
+}
+
+::placeholder{
+    color: white;
+}
+/* /Navbar */
+
+/* Feature Box */
+.carousel-container{
+    position: relative;
+    height: 450px;
+    padding: 20px 0px;
+    overflow-x: hidden;
+    margin-top: 80px; 
+    width: 100%;
+}
+.carousel{
+    position: relative;
+    display: flex;
+    width: 92%;
+    margin: auto;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.slider{
+    flex: 0 0 auto;
+    margin-right: 30px;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    overflow: hidden;
+    
+}
+
+.slider img{
+    width: 70%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+.slider-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, #030b17 80%, #0c111b00);
+    color: #fff;
+}
+
+.movie-title{
+    padding-left: 50px;
+    text-transform: capitalize;
+    margin-top: 80px;
+}
+
+.movie-descri{
+    width: 80%;
+    line-height: 30px;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+/* Video */
+.video-container{
+    display: flex;
+    margin: 20px 20px 0px 10px;
+}
+
+.video-card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 20px    ;
+    overflow: hidden;
+}
+
+.video-card-img, .card-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video{
+    position: absolute;
+}
+
+.video-card:hover .video-card-img{
+    display: none;
+}
+
+/* /Video-box*/
+
+/* Movies */
+.title{
+    color: #fff;
+    opacity: 0.9;
+    text-transform: capitalize;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-left: 35px;
+    font-weight: 500;
+}
+
+.movie-list{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.movie-container{
+    position: absolute;
+    width: 92%;
+    height: 200px;
+    padding-left: 35px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.movie-container::-webkit-scrollbar{
+display: none;
+}
+
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: .5s;
+    background: #000;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .card-cont{
+    opacity: 1;
+}
+
+.card-cont{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 50%;
+}
+
+.descri{
+    color: #fff;
+    opacity: 0.7;
+    margin: 5px 0px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.watchlist-btn{
+    position: absolute;
+    width: 80%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin: -3px -3px;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 7px;
+}
+
+.watchlist-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(./images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+
+}
+
+.watchlist-btn:hover{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.prebtn, .nxtbtn{
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.prebtn{
+    left: 0;
+    background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxtbtn{
+    right: 0;
+    background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.prebtn img,
+.nxtbtn img{
+    width: 15px;
+    height: 20px;
+    opacity: 0;
+}
+
+.prebtn:hover img,
+.nxtbtn:hover img{
+    opacity: 1;
+    transition: 0.5s;
+}
